@@ -15,4 +15,16 @@ console.log(hundreds.toLocaleString('en-IN'));// this will give comma separated 
 
 
 // ++++++++++++++++++  maths  ++++++++++++++++++
+console.log(Math);
+console.log(Math.abs(-4))
+console.log(Math.sqrt(16));
+
+
+const min = 10;
+const max= 20;
+
+console.log(Math.floor(Math.random()*(max-min+1))+min)
+
+
+
 
