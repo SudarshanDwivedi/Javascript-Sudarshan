@@ -32,3 +32,30 @@ console.log(obj3)
 
 
 
+/////////////////////////////////////////////////
+
+const course= {
+    coursename: "cloud computing",
+    price: "899",
+    courseteacher: "sudarshan"
+}
+
+const {courseteacher: tchr}= course
+console.log(tchr);
+
+//  {
+//     "name": "suddi",
+//     "coursename": "javascript",
+//     "price": 999
+//  }
+
+ [
+    {},
+    {},
+    {}
+ ]
+
+
+
+
+
