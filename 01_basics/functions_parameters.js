@@ -64,3 +64,17 @@ function arrayvalues(getarray){
     return getarray[2]
 }
 console.log(arrayvalues(myArray))
+
+
+
+function one(){
+    const username= "suddi"
+    function two(){
+        const website="priya"
+        console.log(username);
+        
+    }
+    // console.log(website)
+    two()
+}
+one()
