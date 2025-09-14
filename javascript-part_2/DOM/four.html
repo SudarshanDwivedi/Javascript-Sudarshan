@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>suddi coder</title>
+</head>
+<body style="background-color: #212121; color: #ffffff;">
+    <ul class="language">
+        <li>Sudarshan Dev Dwiwedi</li>
+
+    </ul>
+</body>
+<script>
+    function addlanguage(langname){
+        const li= document.createElement('li')
+        li.innerHTML= `${langname}`
+        document.querySelector('.language').appendChild(li)
+
+
+    }
+    addlanguage("Priya Shalini")
+    addlanguage("Ayush Saini")
+
+    function addoptilanguage(langname){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptilanguage("Arjun")
+    // this syntax is used as it is more optimised than the innerHTML one because in that complete travresel is taking place to create new element whereas here it is more optimised as we make the node and add at once
+
+    //edit
+
+    const secondlang= document.querySelector("li:nth-child(4)")
+    // secondlang.innerHTML= "aditya" not an optimized one
+
+    const newli = document.createElement('li')
+    newli.textContent = "Urvashi"
+    secondlang.replaceWith(newli)
+
+    //edit
+
+    // const firstlang= document.querySelector("li:first-child")
+    // firstlang.outerHTML= "<li>Suddi broskii</li>"
+
+    //remove
+
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+
+    
+
+
+</script>
+</html>
